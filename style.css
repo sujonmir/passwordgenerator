@@ -455,6 +455,23 @@ body {
     padding: 0;
     color: #000;
 }
+.container2{
+    width: 100%;
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+    position: relative;
+}
+.qrWrapper{
+    padding:10px;
+    background: #fff;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 /*qr code end*/
 
@@ -462,5 +479,16 @@ body {
     .container {
         flex-direction: column;
         flex-wrap: nowrap;
+		margin:0;
+		border-radius:0;
+    }
+	body{
+		height:100%
+	}
+    .qrWrapper{
+        top: 50%;
+    }
+    .container2{
+        height: 500px;
     }
 }
