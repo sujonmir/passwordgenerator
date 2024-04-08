@@ -72,7 +72,7 @@ function getRandomNumber() {
 }
 
 function getRandomSymbol() {
-  const symbols = '~!@#$%^&*()_+{}":?><;.,$€£¥₣₹₻₽₾₺₼₸₴₷฿원₫₮₯₱₳₵₲₪₰';
+  const symbols = `~!@#$%^&*()_-+={[}]|\:;"'<,>.?/`;
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
@@ -167,7 +167,7 @@ generateBtn.addEventListener("click", () => {
 
   if (customText.value.length != 0) {
     myPass = customText.value;
-    customText.value= ''
+    customText.value = "";
   }
   resultEl.innerText = myPass;
   (function () {
